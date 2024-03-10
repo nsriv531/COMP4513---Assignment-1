@@ -1,30 +1,4 @@
-/*
-
-GET /api/circuits: Retrieves information about all circuits.
-GET /api/seasons: Retrieves information about all seasons.
-GET /api/circuits/:ref: Retrieves information about a specific circuit identified by its reference.
-GET /api/constructors: Retrieves information about all constructors.
-GET /api/drivers: Retrieves information about all drivers.
-GET /api/constructors/:ref: Retrieves information about a specific constructor identified by its reference.
-GET /api/constructors/season/:year: Retrieves information about constructors participating in a specific season.
-GET /api/drivers/:ref: Retrieves information about a specific driver identified by its reference.
-GET /api/drivers/search/:substring: Searches for drivers whose name contains a given substring.
-GET /api/driver/season/:year: Retrieves information about drivers participating in a specific season.
-GET /api/driver/races/:raceId: Retrieves information about drivers participating in a specific race.
-GET /api/races/:raceId: Retrieves information about a specific race identified by its ID.
-GET /api/races/season/:year: Retrieves information about races in a specific season.
-GET /api/races/season/:year/round/:round: Retrieves information about a race in a specific season and round.
-GET /api/race/circuits/:ref: Retrieves information about races held at a specific circuit identified by its reference.
-GET /api/races/circuits/:ref/season/:start/:end: Retrieves information about races held at a specific circuit within a range of rounds in a season.
-GET /api/results/:raceId: Retrieves results of a specific race.
-GET /api/results/driver/:ref: Retrieves results of a specific driver.
-GET /api/results/drivers/:ref/seasons/:start/:end: Retrieves results of a specific driver within a range of seasons.
-GET /api/qualifying/:raceId: Retrieves qualifying results of a specific race.
-GET /api/standings/drivers/:raceId: Retrieves driver standings of a specific race.
-GET /api/standings/constructors/:raceId: Retrieves constructor standings of a specific race.
-Each endpoint handles specific queries to a Supabase database and returns relevant data or error messages in JSON format.
 const { createClient } = require("@supabase/supabase-js");
-*/
 
 const supabaseUrl = "https://frliavqmdfgpjdqxxtol.supabase.co";
 const supabaseKey = process.env.SUPABASE_KEY;
